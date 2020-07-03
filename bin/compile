@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+BUILD_DIR=${1:-}
+BUILDPACK_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
+
+export SWIG_LIB="$BUILD_DIR/.apt/usr/share/swig3.0"
+echo "export SWIG_LIB=$SWIG_LIB" >> "$BUILDPACK_DIR/export"
