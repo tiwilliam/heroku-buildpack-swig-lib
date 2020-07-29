@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "SWIG_LIB"
+echo "Swig"
 exit 0
